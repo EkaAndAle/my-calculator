@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-       
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -52,25 +52,24 @@ namespace WindowsFormsApplication1
             string secondValueText = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValueText);
             switch (((Button)sender).Name)
-
             {
                 case "Plus":
-		 result = secondValue + firstValue;
+                    result = secondValue + firstValue;
                     break;
                 case "Minus":
-         result = secondValue - firstValue;
+                    result = secondValue - firstValue;
                     break;
-        case "Multiplication":
-		 result = secondValue * firstValue;
+                case "Multiplication":
+                    result = secondValue * firstValue;
                     break;
                 case "Division":
-         result = secondValue / firstValue;
+                    result = secondValue / firstValue;
                     break;
                 default:
                     throw new Exception("Неизвестная операция");
             }
 
-            
+
             Output.Text = result.ToString();
         }
     }
