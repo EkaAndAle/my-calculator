@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.Add = new System.Windows.Forms.Button();
+            this.Plus = new System.Windows.Forms.Button();
             this.Minus = new System.Windows.Forms.Button();
             this.Multiplication = new System.Windows.Forms.Button();
             this.Division = new System.Windows.Forms.Button();
@@ -44,15 +44,15 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
             // 
-            // Add
+            // Plus
             // 
-            this.Add.Location = new System.Drawing.Point(12, 95);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(75, 23);
-            this.Add.TabIndex = 5;
-            this.Add.Text = "+";
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Click);
+            this.Plus.Location = new System.Drawing.Point(12, 95);
+            this.Plus.Name = "Plus";
+            this.Plus.Size = new System.Drawing.Size(75, 23);
+            this.Plus.TabIndex = 5;
+            this.Plus.Text = "+";
+            this.Plus.UseVisualStyleBackColor = true;
+            this.Plus.Click += new System.EventHandler(this.Click);
             // 
             // Minus
             // 
@@ -108,7 +108,7 @@
             this.Controls.Add(this.Division);
             this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.Minus);
-            this.Controls.Add(this.Add);
+            this.Controls.Add(this.Plus);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -120,7 +120,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Button Plus;
         private System.Windows.Forms.Button Minus;
         private System.Windows.Forms.Button Multiplication;
         private System.Windows.Forms.Button Division;

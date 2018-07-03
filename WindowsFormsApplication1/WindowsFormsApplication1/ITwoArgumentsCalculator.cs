@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace WindowsFormsApplication1
 {
-    interface ITwoArgumentsCalculator
+   public interface ITwoArgumentsCalculator
     {
+        double Calculate(double firstArgument, double secondArgument);
     }
+    
 }
