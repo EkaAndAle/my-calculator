@@ -26,39 +26,52 @@ namespace WindowsFormsApplication1
             string secondValueText = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValueText);
             double result = secondValue + firstValue;
-            textBox3.Text = result.ToString();
+            Output.Text = result.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string firstValueText = textBox1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = textBox2.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
-            double result = secondValue - firstValue;
-            textBox3.Text = result.ToString();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string firstValueText = textBox1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = textBox2.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
-            double result = secondValue * firstValue;
-            textBox3.Text = result.ToString();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void Click(object sender, EventArgs e)
+        {
+            double result;
             string firstValueText = textBox1.Text;
             double firstValue = Convert.ToDouble(firstValueText);
             string secondValueText = textBox2.Text;
             double secondValue = Convert.ToDouble(secondValueText);
-            double result = secondValue / firstValue;
-            textBox3.Text = result.ToString();
-        }
+            switch (((Button)sender).Name)
 
-       
+            {
+                case "Plus":
+		 result = secondValue + firstValue;
+                    break;
+                case "Minus":
+         result = secondValue - firstValue;
+                    break;
+        case "Multiplication":
+		 result = secondValue * firstValue;
+                    break;
+                case "Division":
+         result = secondValue / firstValue;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+            }
+
+            
+            Output.Text = result.ToString();
+        }
     }
 }
