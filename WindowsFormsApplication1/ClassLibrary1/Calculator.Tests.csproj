@@ -48,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StrongTests\DivisionTestsStrong.cs" />
+    <Compile Include="StrongTests\MultiplicationTestsStrong.cs" />
+    <Compile Include="StrongTests\MinusTestsStrong.cs" />
+    <Compile Include="StrongTests\PlusTestsStrong.cs" />
     <Compile Include="TwoArgumentsFolder\DivisionTests.cs" />
     <Compile Include="TwoArgumentsFolder\MinusTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
