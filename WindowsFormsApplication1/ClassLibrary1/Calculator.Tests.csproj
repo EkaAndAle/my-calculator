@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryTests\OneArgumentFactoryTest.cs" />
+    <Compile Include="FactoryTests\TwoArgumentsFactoryTests.cs" />
     <Compile Include="StrongTests\DivisionTestsStrong.cs" />
     <Compile Include="StrongTests\MultiplicationTestsStrong.cs" />
     <Compile Include="StrongTests\MinusTestsStrong.cs" />
