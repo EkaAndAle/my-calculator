@@ -1,6 +1,6 @@
 ﻿
 
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
     public class Minus : ITwoArgumentsCalculator
     {

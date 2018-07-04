@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.OneArgumentFolder
 {
     public class Sin : IOneArgumentCalculator
     {

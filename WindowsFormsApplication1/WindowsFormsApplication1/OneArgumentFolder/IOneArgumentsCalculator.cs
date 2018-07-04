@@ -1,6 +1,6 @@
 ﻿
 
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.OneArgumentFolder
 {
     public interface IOneArgumentCalculator
     {

@@ -1,7 +1,6 @@
 ﻿using System;
 
-
-namespace WindowsFormsApplication1
+namespace WindowsFormsApplication1.OneArgumentFolder
 {
     class OneArgumentFactory
     {

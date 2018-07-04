@@ -40,6 +40,11 @@
             this.Cos = new System.Windows.Forms.Button();
             this.Ln = new System.Windows.Forms.Button();
             this.Ctg = new System.Windows.Forms.Button();
+            this.Log = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Sqrtpow = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -107,7 +112,7 @@
             // 
             this.Sin.Location = new System.Drawing.Point(162, 95);
             this.Sin.Name = "Sin";
-            this.Sin.Size = new System.Drawing.Size(33, 23);
+            this.Sin.Size = new System.Drawing.Size(34, 23);
             this.Sin.TabIndex = 11;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
@@ -151,11 +156,62 @@
             this.Ctg.UseVisualStyleBackColor = true;
             this.Ctg.Click += new System.EventHandler(this.Click1);
             // 
+            // Log
+            // 
+            this.Log.Location = new System.Drawing.Point(162, 125);
+            this.Log.Name = "Log";
+            this.Log.Size = new System.Drawing.Size(34, 23);
+            this.Log.TabIndex = 16;
+            this.Log.Text = "Log";
+            this.Log.UseVisualStyleBackColor = true;
+            this.Log.Click += new System.EventHandler(this.Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(120, 154);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(36, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Sqrtpow
+            // 
+            this.Sqrtpow.Location = new System.Drawing.Point(162, 154);
+            this.Sqrtpow.Name = "Sqrtpow";
+            this.Sqrtpow.Size = new System.Drawing.Size(34, 23);
+            this.Sqrtpow.TabIndex = 18;
+            this.Sqrtpow.Text = "Sp";
+            this.Sqrtpow.UseVisualStyleBackColor = true;
+            // 
+            // Pow
+            // 
+            this.Pow.Location = new System.Drawing.Point(202, 154);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(35, 23);
+            this.Pow.TabIndex = 19;
+            this.Pow.Text = "Pow";
+            this.Pow.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(162, 184);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(34, 23);
+            this.button5.TabIndex = 20;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Pow);
+            this.Controls.Add(this.Sqrtpow);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Log);
             this.Controls.Add(this.Ctg);
             this.Controls.Add(this.Ln);
             this.Controls.Add(this.Cos);
@@ -170,6 +226,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,6 +246,11 @@
         private System.Windows.Forms.Button Cos;
         private System.Windows.Forms.Button Ln;
         private System.Windows.Forms.Button Ctg;
+        private System.Windows.Forms.Button Log;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Sqrtpow;
+        private System.Windows.Forms.Button Pow;
+        private System.Windows.Forms.Button button5;
     }
 }
 

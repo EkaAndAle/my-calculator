@@ -1,6 +1,8 @@
 ﻿using System;
 
 using System.Windows.Forms;
+using WindowsFormsApplication1.OneArgumentFolder;
+using WindowsFormsApplication1.TwoArgumentsFolder;
 
 namespace WindowsFormsApplication1
 {
@@ -19,7 +21,7 @@ namespace WindowsFormsApplication1
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(firstValue, secondValue);
             Output.Text = result.ToString();
-            
+
         }
         private void Click1(object sender, EventArgs e)
         {
@@ -31,6 +33,11 @@ namespace WindowsFormsApplication1
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
