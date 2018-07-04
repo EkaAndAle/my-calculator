@@ -2,7 +2,7 @@
 
 namespace WindowsFormsApplication1.OneArgumentFolder
 {
-    class OneArgumentFactory
+    public class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string calculatorName)
         {
