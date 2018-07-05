@@ -17,6 +17,12 @@ namespace WindowsFormsApplication1.TwoArgumentsFolder
                 case "PowInvers": return new PowInvers(); 
                 case "GeomMean": return new GeomMean();
                 case "Log": return new Log();
+                case "Min": return new Min();
+                case "Max": return new Max(); 
+                case "Average": return new Average(); 
+                case "Mod": return new Mod(); 
+                case "Div": return new Div();
+
                 default:
                     throw new Exception("Неизвестная операция");
             }
