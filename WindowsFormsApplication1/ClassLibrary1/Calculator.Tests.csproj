@@ -50,6 +50,16 @@
   <ItemGroup>
     <Compile Include="FactoryTests\OneArgumentFactoryTest.cs" />
     <Compile Include="FactoryTests\TwoArgumentsFactoryTests.cs" />
+    <Compile Include="OneArgumentTests\CosTests.cs" />
+    <Compile Include="OneArgumentTests\CosTestsStrong.cs" />
+    <Compile Include="OneArgumentTests\Ctg.cs" />
+    <Compile Include="OneArgumentTests\CtgTestsStrong.cs" />
+    <Compile Include="OneArgumentTests\LnTests.cs" />
+    <Compile Include="OneArgumentTests\LnTestsStrong.cs" />
+    <Compile Include="OneArgumentTests\SinStrongTests.cs" />
+    <Compile Include="OneArgumentTests\SinTests.cs" />
+    <Compile Include="OneArgumentTests\TgTests.cs" />
+    <Compile Include="OneArgumentTests\TgTestsStrong.cs" />
     <Compile Include="StrongTests\DivisionTestsStrong.cs" />
     <Compile Include="StrongTests\MultiplicationTestsStrong.cs" />
     <Compile Include="StrongTests\MinusTestsStrong.cs" />
