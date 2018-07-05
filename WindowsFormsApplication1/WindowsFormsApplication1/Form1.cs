@@ -14,32 +14,41 @@ namespace WindowsFormsApplication1
         }
         private void Click(object sender, EventArgs e)
         {
-            string firstValueText = textBox1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            string secondValueText = textBox2.Text;
-            double secondValue = Convert.ToDouble(secondValueText);
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(firstValue, secondValue);
-            Output.Text = result.ToString();
+            try
+            {
+                string firstValueText = textBox1.Text;
+                double firstValue = Convert.ToDouble(firstValueText);
+                string secondValueText = textBox2.Text;
+                double secondValue = Convert.ToDouble(secondValueText);
+                ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
+                double result = calculator.Calculate(firstValue, secondValue);
+                Output.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                Output.Text = exc.Message;
+            }
 
         }
         private void Click1(object sender, EventArgs e)
         {
-            string firstValueText = textBox1.Text;
-            double firstValue = Convert.ToDouble(firstValueText);
-            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(firstValue);
-            Output.Text = result.ToString();
+            try
+            {
+                string firstValueText = textBox1.Text;
+                double firstValue = Convert.ToDouble(firstValueText);
+                IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button) sender).Name);
+                double result = calculator.Calculate(firstValue);
+                Output.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                Output.Text = exc.Message;
+            }
+            
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }

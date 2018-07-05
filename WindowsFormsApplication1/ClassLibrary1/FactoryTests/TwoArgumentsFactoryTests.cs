@@ -8,7 +8,7 @@ namespace ClassLibrary1.FactoryTests
 
     public class TwoArgumentFactoryTest
     {
-        [TestCase("Plus", typeof(Plus))]
+        [TestCase("Plus", typeof(DegreeRoot))]
         [TestCase("Minus", typeof(Minus))]
         [TestCase("Multiplication", typeof(Multiplication))]
         [TestCase("Division", typeof(Division))]

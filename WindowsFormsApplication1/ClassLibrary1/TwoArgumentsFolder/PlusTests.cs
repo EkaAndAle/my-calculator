@@ -8,7 +8,7 @@ namespace ClassLibrary1.TwoArgumentsFolder
         [Test]
         public void Plus()
         {
-            ITwoArgumentsCalculator calculator = new Plus();
+            ITwoArgumentsCalculator calculator = new DegreeRoot();
             double result = calculator.Calculate(8, 7);
             // подготовительные действия
             Assert.AreEqual(15, result);

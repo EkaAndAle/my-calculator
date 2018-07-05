@@ -11,7 +11,7 @@ namespace WindowsFormsApplication1.TwoArgumentsFolder
         [TestCase(-7, -2, -9)]
         public void CalculateAdditionTestStrong(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = new Plus();
+            ITwoArgumentsCalculator calculator = new DegreeRoot();
             double result = calculator.Calculate(13, 26);
             Assert.AreEqual(39, result);
         }
