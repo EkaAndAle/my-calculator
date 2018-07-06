@@ -4,16 +4,16 @@ using NUnit.Framework;
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
     [TestFixture]
-    public class PlusTestStrong
+    public class GeomMeanTestStrong
     {
         [TestCase(0, 0, 0)]
-        [TestCase(3, 4, 7)]
-        [TestCase(-7, -2, -9)]
+        [TestCase(8, 2, 4)]
+        [TestCase(64, 4, 128)]
         public void CalculateAdditionTestStrong(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = new Plus();
-            double result = calculator.Calculate(13, 26);
-            Assert.AreEqual(39, result);
+            ITwoArgumentsCalculator calculator = new GeomMean();
+            double result = calculator.Calculate(25, 25);
+            Assert.AreEqual(25, result);
         }
     }
 }

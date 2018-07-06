@@ -5,19 +5,19 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class CtgTestStrong
+    public class CubeTestStrong
 
     {
-        [TestCase(3.141592 / 2, 0)]
-        [TestCase(3.141592 / 4, 1)]
-        [TestCase(3*3.141592 / 4, -1)]
+        [TestCase(3 , 27)]
+        [TestCase(2, 8)]
+        [TestCase(1, 1)]
         public void CalculateCtgTestStrong(double firstValue, double expected)
         {
 
 
-            IOneArgumentCalculator calculator = new Ctg();
+            IOneArgumentCalculator calculator = new Cube();
             double result = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, result, 0.00001);
+            Assert.AreEqual(expected, result);
         }
     }
 }

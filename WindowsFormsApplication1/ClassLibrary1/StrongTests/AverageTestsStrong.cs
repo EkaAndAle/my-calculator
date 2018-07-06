@@ -4,16 +4,16 @@ using NUnit.Framework;
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
     [TestFixture]
-    public class PlusTestStrong
+    public class AverageTestStrong
     {
-        [TestCase(0, 0, 0)]
-        [TestCase(3, 4, 7)]
-        [TestCase(-7, -2, -9)]
+        [TestCase(0, 0,0)]
+        [TestCase(8, 2, 5)]
+        [TestCase(64, 4, 34)]
         public void CalculateAdditionTestStrong(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = new Plus();
-            double result = calculator.Calculate(13, 26);
-            Assert.AreEqual(39, result);
+            ITwoArgumentsCalculator calculator = new Average();
+            double result = calculator.Calculate(26, 2);
+            Assert.AreEqual(14, result);
         }
     }
 }
