@@ -2,6 +2,9 @@
 
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
+    /// <summary>
+    /// Finding the minimum number
+    /// </summary>
     public class Min : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)

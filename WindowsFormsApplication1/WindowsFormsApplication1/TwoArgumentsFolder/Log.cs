@@ -2,6 +2,9 @@
 
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
+    /// <summary>
+    ///  Calculating the logarithm
+    /// </summary>
     public class Log : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)

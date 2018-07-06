@@ -2,6 +2,9 @@
 
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
+    /// <summary>
+    /// Finding the maximum number
+    /// </summary>
     public class Max : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)

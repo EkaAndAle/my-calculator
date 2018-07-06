@@ -1,6 +1,9 @@
 ﻿using System;
 namespace WindowsFormsApplication1.OneArgumentFolder
 {
+    /// <summary>
+    /// Finding a number in -1 degree
+    /// </summary>
     public class Reverse : IOneArgumentCalculator
     {
         public double Calculate(double firstArgument)

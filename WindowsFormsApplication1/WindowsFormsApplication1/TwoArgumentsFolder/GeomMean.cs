@@ -2,6 +2,9 @@
 
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
+    /// <summary>
+    ///  Finding the geometric mean
+    /// </summary>
     public class GeomMean : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)

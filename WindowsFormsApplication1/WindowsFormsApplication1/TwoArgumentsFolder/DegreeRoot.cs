@@ -3,6 +3,9 @@ using System;
 
 namespace WindowsFormsApplication1.TwoArgumentsFolder
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DegreeRoot : ITwoArgumentsCalculator
     {
         public double Calculate(double firstArgument, double secondArgument)
