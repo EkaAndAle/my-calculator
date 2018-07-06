@@ -1,10 +1,10 @@
 ﻿using WindowsFormsApplication1.TwoArgumentsFolder;
 using NUnit.Framework;
 
-namespace WindowsFormsApplication1.TwoArgumentsFolder
+namespace ClassLibrary1.TwoArgumentsTests
 {
     [TestFixture]
-    public class AverageTestStrong
+    public class AverageTest
     {
         [TestCase(0, 0,0)]
         [TestCase(8, 2, 5)]

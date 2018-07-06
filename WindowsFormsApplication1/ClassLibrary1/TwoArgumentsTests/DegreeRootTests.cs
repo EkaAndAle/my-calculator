@@ -1,10 +1,10 @@
 ﻿using WindowsFormsApplication1.TwoArgumentsFolder;
 using NUnit.Framework;
 
-namespace WindowsFormsApplication1.TwoArgumentsFolder
+namespace ClassLibrary1.TwoArgumentsTests
 {
     [TestFixture]
-    public class DegreeRootTestStrong
+    public class DegreeRootTests
     {
         [TestCase(0, 0, 0)]
         [TestCase(25, 2, 5)]

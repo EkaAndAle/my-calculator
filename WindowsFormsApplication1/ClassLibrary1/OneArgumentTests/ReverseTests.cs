@@ -5,20 +5,19 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class Log10TestStrong
+    public class ReverseTests
 
     {
-        [TestCase(100, 2)]
-        [TestCase(10, 1)]
-        [TestCase(1, 0)]
+        [TestCase(2, 0.5)]
+        [TestCase(4, 0.25)]
+        [TestCase(8, 0.125)]
         public void CalculateReverseTestStrong(double firstValue, double expected)
         {
 
 
-            IOneArgumentCalculator calculator = new Log10();
+            IOneArgumentCalculator calculator = new Reverse();
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
     }
 }
-

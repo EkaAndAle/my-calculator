@@ -5,19 +5,20 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class CubeTestStrong
+    public class Log10Tests
 
     {
-        [TestCase(3 , 27)]
-        [TestCase(2, 8)]
-        [TestCase(1, 1)]
-        public void CalculateCtgTestStrong(double firstValue, double expected)
+        [TestCase(100, 2)]
+        [TestCase(10, 1)]
+        [TestCase(1, 0)]
+        public void CalculateReverseTestStrong(double firstValue, double expected)
         {
 
 
-            IOneArgumentCalculator calculator = new Cube();
+            IOneArgumentCalculator calculator = new Log10();
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
     }
 }
+

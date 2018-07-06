@@ -5,7 +5,7 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class ModuleTestStrong
+    public class ModuleTests
 
     {
         [TestCase(-2, 2)]

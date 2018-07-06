@@ -1,19 +1,19 @@
 ﻿using WindowsFormsApplication1.TwoArgumentsFolder;
 using NUnit.Framework;
 
-namespace WindowsFormsApplication1.TwoArgumentsFolder
+namespace ClassLibrary1.TwoArgumentsTests
 {
     [TestFixture]
-    public class DivTestStrong
+    public class MaxTests
     {
-        [TestCase(5, 2, 2)]
-        [TestCase(8, 2, 4)]
-        [TestCase(64, 4, 8)]
+        [TestCase(0, 0, 0)]
+        [TestCase(8, 2, 8)]
+        [TestCase(64, 4, 64)]
         public void CalculateAdditionTestStrong(double firstValue, double secondValue, double expected)
         {
-            ITwoArgumentsCalculator calculator = new Div();
+            ITwoArgumentsCalculator calculator = new Max();
             double result = calculator.Calculate(25, 2);
-            Assert.AreEqual(12, result);
+            Assert.AreEqual(25, result);
         }
     }
 }

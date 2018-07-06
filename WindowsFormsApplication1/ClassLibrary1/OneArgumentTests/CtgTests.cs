@@ -5,7 +5,7 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class CtgTestStrong
+    public class CtgTests
 
     {
         [TestCase(3.141592 / 2, 0)]

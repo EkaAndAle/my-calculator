@@ -5,17 +5,17 @@ namespace ClassLibrary1.OneArgumentTests
 {
 
     [TestFixture]
-    public class InverseTestStrong
+    public class CubeTests
 
     {
-        [TestCase(2, -2)]
-        [TestCase(-2, 2)]
-        [TestCase(8, -8)]
-        public void CalculateReverseTestStrong(double firstValue, double expected)
+        [TestCase(3 , 27)]
+        [TestCase(2, 8)]
+        [TestCase(1, 1)]
+        public void CalculateCtgTestStrong(double firstValue, double expected)
         {
 
 
-            IOneArgumentCalculator calculator = new Inverse();
+            IOneArgumentCalculator calculator = new Cube();
             double result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
